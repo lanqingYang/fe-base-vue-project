@@ -1,0 +1,11 @@
+/* 公共样式 在main.ts中引入  */
+// 将variable.scss中的变量导入到全局中，将值赋值给变量
+@use './variable.scss' as *;
+:root{
+// #{color-text-primary-name} 是将将表达式 #{color-text-primary-name} 解析为变量名字符串。效果=> #{color-text-primary-name} => --base-color-text-primary ，避免硬编码
+  #{$color-text-primary-name}:$color-text-primary;
+  #{$color-text-regular-name}:$color-text-regular;
+  #{$color-text-secondary-name}:$color-text-secondary;
+  #{$color-text-placeholder-name}:$color-text-placeholder;
+
+}

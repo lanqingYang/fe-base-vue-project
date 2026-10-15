@@ -1,0 +1,17 @@
+/* 定义变量和值,实际css变量和值的对应关系在base.scss中 */
+
+$prefix:'base';
+
+// ====== 颜色变量定义 start =======
+$color-text-primary:#303133;
+$color-text-regular:#606266;
+$color-text-secondary:#909399;
+$color-text-placeholder:#c0c4cc;
+// ====== 颜色变量定义 end =======
+
+// ======= css 变量名定义 start =======
+$color-text-primary-name :--#{$prefix}-color-text-primary;
+$color-text-regular-name :--#{$prefix}-color-text-regular;
+$color-text-secondary-name :--#{$prefix}-color-text-secondary;
+$color-text-placeholder-name :--#{$prefix}-color-text-placeholder;
+//======= css 变量名定义 end =======
